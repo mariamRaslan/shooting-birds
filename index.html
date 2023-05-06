@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/index.js"></script>
+    <script src="js/bomb.js" type="module"></script>
+    <style>
+    </style>
+</head>
+<body class="fw-bold fs-5">
+    <div class="infoDiv text-center text-dark" >
+        
+        <form action="game.html" method="get">
+            <p class="fs-2 ">Select Game Level</p>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Choose Level</option>
+                <option value="1">1</option>
+            </select>
+            <p>Enter Your Name</p>
+            <input class="form-control" type="text" placeholder="Enter Your Name" name="name">
+            <span id="spanNameError" class="text-danger fs-6"></span><br>
+            <input class="btn btn-success" type="submit" value="Go" name="submitButton">
+        </form>
+    </div>
+    <div class="infoDiv text-center text-dark" >
+        <p class="fs-2">Game Bird Shooting Points</p>
+        <div class="birdDiv text-primary"><img src="images/1.gif">+5 Points</div>
+        <div class="birdDiv text-success"><img src="images/2.gif">+10 Points</div>
+        <div class="birdDiv text-danger"><img src="images/3.gif">-10 Points</div>
+    </div>
+    
+</body>
+</html>
